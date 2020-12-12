@@ -1,28 +1,29 @@
-str = input('Введите строку, где одно слово является обращением другого: ')
-raz=0
-for i in str:
-    if i != ' ':
-        raz+=1
-    else:
-        word=str[:raz]
-        word=word[::-1]
-        str=str[raz+1:]
-        raz = 0
-        str2 = str
-        for i in str:
-            if i != ' ':
-                raz += 1
-            else:
-                if str2.startswith(' '):
-                    str2 = str2[1:]
-                else:
-                    str2 = str
-                word2 = str2[:raz]
-                str2=str2[raz:]
-                count = 0
-                if word==word2:
-                    print(word[::-1],word2)
-                    word=''
-                    word2=''
-                else:
-                    word2=''
+str=input("Введите строку из слов : ")+" "
+
+word=" "
+start=0
+mem=0
+invers=" "
+
+other=""
+start2=0
+mem2=0
+
+cup=0
+
+for i in range(len(str)):
+    if str[i]==" "  :
+        mem =i
+        word=word.replace(word,str[start:mem])
+        invers=word.replace(word,word[::-1])
+        start = i+1
+        for j in range(len(str)):
+            if str [j] == " "  :
+                mem2 = j
+                other = other.replace(other,str[start2:mem2])
+                start2 = j+1
+            if invers==other :
+                cup+=1
+                print("есть такая пара слов - " + word + " и " + other)
+
+print("таких пар "+cup+" штук")
