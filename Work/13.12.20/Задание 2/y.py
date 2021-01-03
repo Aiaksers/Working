@@ -1,2 +1,3 @@
 round=input("Введите количество раундов:")
-for 
+for i in range (round):
+    
