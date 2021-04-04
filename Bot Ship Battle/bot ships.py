@@ -43,7 +43,7 @@ class field:
             else:
                 break
 
-    def addForship(self):
+    def addforship(self):
         global coordx
         global coordy
         fourship = 4
@@ -139,7 +139,7 @@ class field:
                     except IndexError:
                         pass
 
-    def addThreeship(self):
+    def addthreeship(self):
         global coordx
         global coordy
         threeship = 3
