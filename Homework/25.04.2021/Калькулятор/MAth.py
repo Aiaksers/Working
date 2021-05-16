@@ -19,7 +19,6 @@ while True:
     while True:
         try:
             numberone = float(input('Введите первое число: '))
-            break
         except ValueError:
                     print("Число не является числом")
                     break
@@ -27,7 +26,6 @@ while True:
     while True:
         try:
             numbertwo = float(input('Введите второе число: '))
-            break
         except ValueError:
                     print("Число не является числом")
                     break
